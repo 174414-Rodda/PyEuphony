@@ -229,7 +229,7 @@ while True:
         y=datetime.datetime.now()
         wes=datetime.datetime.now()
         
-    if(int((y-wes).total_seconds())==1):
+    if(int((y-wes).total_seconds())==1 and elapsed<int(sound.get_length())):
         wes = datetime.datetime.now()
         elapsed+=1
     layout(window_surface,a,b,sound,elapsed,angle,stride,speed)#Board,left,Right,timediff,cirlcex,circley
